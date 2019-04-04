@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Archivo|Karla|Montserrat|Ubuntu+Mono" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+
+</head>
+<body>
+    <div class = "absolute-items">
+        <div class = "name-about">
+            <span>Jake Huang</span>
+        </div>
+        <nav class = "navbar">
+            <div class = "nav-home">
+                <span>H</span>
+                <span>o</span>
+                <span>m</span>
+                <span>e</span>
+            </div>
+            <div class = "nav-projects">
+                <span >P</span>
+                <span >r</span>
+                <span >o</span>
+                <span >j</span>
+                <span >e</span>
+                <span >c</span>
+                <span >t</span>
+                <span >s</span>
+            </div>
+            <div class = "nav-about">
+                <span >A</span>
+                <span >b</span>
+                <span >o</span>
+                <span >u</span>
+                <span >t</span>
+            </div>
+            <div class = "nav-contact">
+                <span >C</span>
+                <span >o</span>
+                <span >n</span>
+                <span >t</span>
+                <span >a</span>
+                <span >c</span>
+                <span >t</span>
+            </div>
+        </nav>
+        <footer class = "foot">
+            <div>
+                <a href="#" class = "footer-link fab fa-linkedin"></a>
+            </div>
+            <div>
+                <a href="#" class = "footer-link fab fa-instagram"></a>
+            </div>
+            <div>
+                <a href="#" class = "footer-link fab fa-facebook-square"></a>
+            </div>
+        </footer>
+    </div>
+<!-- ========================================================================================= -->
+    <div class = "container">
+        <div class = "home">
+            <div class = "quote-div">
+                <p id = "quote">"Innovation is the calling card of the future."</p>
+                <p id = "author">- Anna Eshoo</p>
+            </div>
+        </div>
+
+        <!-- --------------------------------------------------------------- -->
+        
+        <div class = "projects">
+            <div class = "hangman pdiv">
+                <a href="http://bufu2o2.github.io/hangman/" target = "_blank">
+                    <div class = "projects-title">Hangman Game</div>
+                </a>
+            </div>
+            <div class = "giphy pdiv">
+                <a href="http://bufu2o2.github.io/giphy/" target = "_blank">
+                    <div class = "projects-title">GIPHY Search</div>
+                </a>
+            </div>
+            <div class = "jquery pdiv">
+                <a href="http://bufu2o2.github.io/jquerygame/" target = "_blank">
+                    <div class = "projects-title">Starwars & Pokemon Games</div>
+                </a>
+            </div>
+            <div class = "timer pdiv">
+                <a href="http://bufu2o2.github.io/timer/" target = "_blank">
+                    <div class = "projects-title">Timed Trivia Game</div>
+                </a>
+            </div>
+            <div class = "rps pdiv">
+                <a href="http://bufu2o2.github.io/rps/" target = "_blank">
+                    <div class = "projects-title">2 player Firebase Game</div>
+                </a>
+            </div>
+            <div class = "adash pdiv">
+                <a href="https://mputterf.github.io/Project1/" target = "_blank">
+                    <div class = "projects-title">Customizable Dashboard</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- --------------------------------------------------------------- -->
+
+        <div class = "about">
+            <div class = "about-left">
+                <img src="img/pokestar.jpg" alt = "me">
+                <hr>
+                <p class = "about-skills">School and Skills</p>
+                <ul>
+                    <li><span class="fas fa-graduation-cap"></span>UCLA Bootcamp</li>
+                    <li><span class="fab fa-html5"></span>HTML 5</li>
+                    <li><span class="fab fa-css3-alt"></span>CSS3</li>
+                    <li><span class="fab fa-js"></span>Vanilla Javascript</li>
+                    <li><span class="fab fa-js-square"></span>JQuery</li>
+                    <li><span class="fab fa-free-code-camp"></span>Google Firebase</li>
+                    <li><span class="fab fa-node"></span>NodeJS</li>
+                </ul>
+            </div>
+            <div class = "about-right">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse eligendi nisi cupiditate, perspiciatis quisquam et earum tenetur ipsam quasi minima, iure veniam eveniet fuga sint a inventore laudantium est maxime tempora. Necessitatibus quos facilis autem vel accusantium officiis odio odit id deleniti non impedit eveniet repellat atque, quo cum, porro quidem quas. Nihil deleniti amet veritatis iusto eligendi dolores velit quo neque voluptates sint ut a facilis, illum cumque? Ex cumque reiciendis possimus optio molestias soluta neque? Porro impedit maiores laudantium esse dicta dolor tempore eveniet ratione dolores sit, eum cumque ad fuga delectus, deserunt repellat, nihil quisquam. Laudantium.</p>
+            </div>
+        </div>
+
+        <!-- --------------------------------------------------------------- -->
+
+        <div class = "contact">
+            <div class = "contact-title">
+                Looking forward to hearing from you!
+            </div>
+            <form>
+                <p>Name: </p>
+                <input type="text" placeholder="Full Name">
+                <p>Email: </p>
+                <input type="email" placeholder="Email Address">
+                <p>Message: </p>
+                <textarea name="message" placeholder= "Project Description" id="contact-message" cols="50" rows="10"></textarea>
+                <br><br>
+                <div id = "submit">
+                    <span><i class="far fa-paper-plane"></i></span>
+                    <span>S</span>
+                    <span>e</span>
+                    <span>n</span>
+                    <span>d</span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>

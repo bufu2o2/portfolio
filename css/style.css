@@ -1,0 +1,242 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Archivo', sans-serif;
+font-family: 'Karla', sans-serif;
+font-family: 'Ubuntu Mono', monospace;
+*/
+html, body{
+    background-color: black;
+    color: white;
+    display: grid;
+    position: relative;
+    height: 100%;
+    letter-spacing: 3px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 12px;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    cursor: crosshair;
+    color: white;
+}
+.name-about{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.name-about:hover{
+    cursor: crosshair;
+}
+.navbar{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: grid;
+    width: 500px;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+.navbar div span{
+    margin: 0 -3px;
+}
+.navbar div:hover{
+    cursor: crosshair;
+    font-weight: bold;
+    color: rgb(255, 251, 226);
+    text-shadow: 0px 0px 1px gold;
+}
+    .navbar div:hover span:nth-child(1){ transition-delay: 0s; }
+    .navbar div:hover span:nth-child(2){ transition-delay: .033s; }
+    .navbar div:hover span:nth-child(3){ transition-delay: .066s; }
+    .navbar div:hover span:nth-child(4){ transition-delay: .1s; }
+    .navbar div:hover span:nth-child(5){ transition-delay: .133s; }
+    .navbar div:hover span:nth-child(6){ transition-delay: .166s; }
+    .navbar div:hover span:nth-child(7){ transition-delay: .2s; }
+    .navbar div:hover span:nth-child(8){ transition-delay: .233s; }
+
+.foot{
+    position: fixed;
+    bottom: 30px;
+    left: calc(50% - 250px);
+    display: grid;
+    width: 500px;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 20px;
+}
+.foot div{
+    text-align: center;
+}
+.foot div a:hover{
+    font-weight: bold;
+    color: rgb(255, 251, 226);
+    text-shadow: 0px 0px 1px gold;
+}
+
+/* ====================================================================================== */
+
+.container{
+    position: absolute;
+    display: grid;
+    top: 70px;
+    left: 30px;
+    width: calc(100% - 60px);
+    height: calc(100% - 140px);
+    align-content: center;
+    justify-content: center;
+}
+
+/* ----------------------------------------------------------- */
+.quote-div, .home{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+    width: 90%;
+    height: 300px;
+}
+#quote{
+    font-size: 40px;
+    line-height: 100px;
+    text-align: left;
+    justify-self: center;
+}
+#author{
+    font-size: 20px;
+    line-height: 100px;
+    text-align: right;
+}
+
+/* ----------------------------------------------------------- */
+
+.projects{
+    display: none;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+    width: 95%;
+    height: 100%;
+}
+.projects .pdiv{
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+.projects .pdiv a{
+    display: grid;
+    align-content: center;
+    height: 100px;
+}
+.projects .pdiv a:hover{
+    color: rgb(255, 251, 226);
+    text-shadow: 0px 0px 3px gold;
+}
+
+/* ----------------------------------------------------------- */
+
+.about{
+    display: none;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-content: center;
+    line-height: 2;
+}
+.about-left{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    width: 100%;
+}
+.about-left p{
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px inset white;
+    margin-bottom: 20px;
+}
+hr{
+    width: 90%;
+}
+li span{
+    margin-right: 10px;
+    font-size: 20px;
+}
+li span:hover{
+    color: rgb(236, 210, 216);
+    text-shadow: 0px 0px 3px rgb(75, 0, 15);
+}
+.about-left img{
+    width: 200px;
+}
+.about-right{
+    display: grid;
+    justify-self: center;
+    align-content: center;
+    width: 80%;
+}
+.about-right p{
+    font-size: 15px;
+}
+
+/* ----------------------------------------------------------- */
+
+.contact{
+    display: none;
+    position: absolute;
+    justify-items: center;
+    align-content: center;
+    width: 500px;
+    height: 50%;
+    z-index: 100;
+    line-height: 2;
+    right: 0;
+    top: 80px;
+}
+.contact-title{
+    margin: 20px;
+}
+form{
+    width: 100%;
+    outline: none;
+
+}
+form input, #submit, textarea{
+    border-radius: 3px;
+    outline: none;
+    font-family: 'Archivo', sans-serif;
+    font-size: 12px;
+}
+form input{
+    display: grid;
+    width: 80%;
+}
+#submit{
+    height: 25px;
+    justify-content: right;
+    background: transparent;
+    border: none;
+    color: white;
+
+}
+#submit:hover{
+    cursor: crosshair;
+    font-weight: bold;
+    color: rgb(255, 251, 226);
+    text-shadow: 0px 0px 1px gold;
+}
+    #submit:hover span:nth-child(1){ transition-delay: 0s; }
+    #submit:hover span:nth-child(2){ transition-delay: .033s; }
+    #submit:hover span:nth-child(3){ transition-delay: .066s; }
+    #submit:hover span:nth-child(4){ transition-delay: .1s; }
+    #submit:hover span:nth-child(5){ transition-delay: .133s; }
+#submit:active{
+    color: rgb(255, 248, 199);
+    text-shadow: 0px 0px 2px gold;
+}
+textarea{
+    width: 80%;
+}
