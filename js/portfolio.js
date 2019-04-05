@@ -44,7 +44,6 @@ let trans = {
             cl("projects");
             pages.projects.slideDown(1200).css({"display": "grid"}, 1000);
             pages.home.slideUp(1000);
-            
             pages.about.slideUp(1000);
         });
     },
@@ -58,21 +57,22 @@ let trans = {
         });
     },
     c: () => {
-        nav.contact.on("click", () => {
+        nav.contact.on("click", function() {
             cl("contact");
             trans.ctoggle();
+            $(this).blur();
         });
     },
     ctoggle: () => {
         if(pages.contact.attr("value") === "hide"){
             cl("Contact Val is hide");
             pages.contact.attr("value", "show");
-            pages.contact.animate({"margin-right": '+=450'}, 1000).css({"display": "grid"}, 1000);
+            pages.contact.animate({"margin-right": '+=450'}, 1500);
         }
         else if(pages.contact.attr("value") === "show"){
             cl("Contact Val is show");
             pages.contact.attr("value", "hide");
-            pages.contact.animate({"margin-right": '-=450'}, 1000).css({"display": "grid"}, 1000);
+            pages.contact.animate({"margin-right": '-=450'}, 1500);
         }
         else{
             cl("shit aint working");
