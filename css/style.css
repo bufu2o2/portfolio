@@ -438,7 +438,7 @@ textarea{
         width: 350px;
         height: 220px;
         right: -500px;
-        top: 10px;
+        top: -100px;
     }
     .contact-title{
         justify-self: start;
