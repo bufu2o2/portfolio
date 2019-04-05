@@ -32,28 +32,30 @@ let pages = {
 
 let trans = {
     h: () => {
-        nav.home.on("click", () => {
+        nav.home.on("click", function() {
             cl("home");
             pages.home.slideDown(1200).css({"display": "grid"}, 1000);
             pages.projects.slideUp(1000);
             pages.about.slideUp(1000);
+            $(this).blur();
         });
     },
     p: () => {
-        nav.projects.on("click", () => {
+        nav.projects.on("click", function() {
             cl("projects");
             pages.projects.slideDown(1200).css({"display": "grid"}, 1000);
             pages.home.slideUp(1000);
             pages.about.slideUp(1000);
+            $(this).blur();
         });
     },
     a: () => {
-        nav.about.on("click", () => {
+        nav.about.on("click", function() {
             cl("about");
             pages.about.slideDown(1200).css({"display": "grid"}, 1000);
             pages.home.slideUp(1000);
             pages.projects.slideUp(1000);
-            
+            $(this).blur();
         });
     },
     c: () => {

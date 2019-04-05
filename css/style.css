@@ -234,7 +234,7 @@ form input{
     cursor: crosshair;
     font-weight: bold;
     color: rgb(255, 251, 226);
-    text-shadow: 0px 0px 1px gold;
+    text-shadow: 0px 0px 3px gold;
     /* transform: translateX(500px); */
 }
 /*
@@ -353,18 +353,6 @@ textarea{
         margin-left: 50px;
     }
     #submit{
-        height: 25px;
-        justify-content: right;
-        background: transparent;
-        border: none;
-        color: white;
         margin-bottom: 25px;
-        position: relative;
-    }
-    #submit:hover{
-        cursor: crosshair;
-        font-weight: bold;
-        color: rgb(255, 251, 226);
-        text-shadow: 0px 0px 1px gold;
     }
 }
