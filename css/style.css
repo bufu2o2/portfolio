@@ -312,6 +312,8 @@ and (orientation : portrait)  {
         grid-template-columns: 350px;
         align-content: flex-start;
         overflow-y: scroll;
+        overflow-x: hidden;
+        margin-top: 10px;
     }
     .about-left{
         width: 100%;
@@ -324,10 +326,13 @@ and (orientation : portrait)  {
         margin-bottom: 50px;
     }
     hr{
-        margin: 40px 0;
+        margin: 30px 0;
     }
     .about-left img{
         width: 350px;
+    }
+    .about-right p{
+        margin-bottom: 60px;
     }
 
 /* --------------------------------------------------------------*/
