@@ -427,7 +427,7 @@ textarea{
         width: 200px;
     }
     .about-right p{
-        margin: 50px 0;
+        margin: 40px 0;
         overflow-y: scroll;
         overflow-x: hidden;
     }
