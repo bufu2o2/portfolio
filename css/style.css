@@ -303,7 +303,7 @@ textarea{
         justify-self: center;
         width: 95%;
         height: 100%;
-        margin-top: -30px;
+        /* margin-top: -30px; */
     }
 
     /* --------------------------------------------------------------*/
