@@ -427,8 +427,9 @@ textarea{
         width: 200px;
     }
     .about-right p{
-        margin-bottom: 60px;
+        margin: 50px 0;
         overflow-y: scroll;
+        overflow-x: hidden;
     }
     
 /* --------------------------------------------------------------*/
@@ -437,7 +438,7 @@ textarea{
         width: 350px;
         height: 220px;
         right: -500px;
-        top: 40px;
+        top: 10px;
     }
     .contact-title{
         justify-self: start;
