@@ -1,5 +1,16 @@
 $(() => {
-
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDzMm7clsh9FftZN_K696lX2rCZOmfBHbw",
+    authDomain: "port-contact.firebaseapp.com",
+    databaseURL: "https://port-contact.firebaseio.com",
+    projectId: "port-contact",
+    storageBucket: "port-contact.appspot.com",
+    messagingSenderId: "891521936875"
+  };
+  firebase.initializeApp(config);
+  let db = firebase.database();
+  let dbr = db.ref();
 
 
 let cl = (m) => {
@@ -23,47 +34,100 @@ let trans = {
     h: () => {
         nav.home.on("click", () => {
             cl("home");
-            pages.home.slideDown().css("display", "grid");
-            pages.projects.slideUp();
-            pages.about.slideUp();
-            pages.contact.slideUp();
+            pages.home.slideDown(1200).css({"display": "grid"}, 1000);
+            pages.projects.slideUp(1000);
+            pages.about.slideUp(1000);
         });
     },
     p: () => {
         nav.projects.on("click", () => {
             cl("projects");
-            pages.home.slideUp();
-            pages.projects.slideDown().css("display", "grid");
-            pages.about.slideUp();
-            pages.contact.slideUp();
+            pages.projects.slideDown(1200).css({"display": "grid"}, 1000);
+            pages.home.slideUp(1000);
+            
+            pages.about.slideUp(1000);
         });
     },
     a: () => {
         nav.about.on("click", () => {
             cl("about");
-            pages.home.slideUp();
-            pages.projects.slideUp();
-            pages.about.slideDown().css("display", "grid");
-            pages.contact.slideUp();
+            pages.about.slideDown(1200).css({"display": "grid"}, 1000);
+            pages.home.slideUp(1000);
+            pages.projects.slideUp(1000);
+            
         });
     },
     c: () => {
         nav.contact.on("click", () => {
             cl("contact");
-            pages.home.slideUp();
-            pages.projects.slideUp();
-            pages.about.slideUp();
-            pages.contact.slideDown().css("display", "grid");
+            trans.ctoggle();
         });
     },
+    ctoggle: () => {
+        if(pages.contact.attr("value") === "hide"){
+            cl("Contact Val is hide");
+            pages.contact.attr("value", "show");
+            pages.contact.animate({"margin-right": '+=450'}, 1000).css({"display": "grid"}, 1000);
+        }
+        else if(pages.contact.attr("value") === "show"){
+            cl("Contact Val is show");
+            pages.contact.attr("value", "hide");
+            pages.contact.animate({"margin-right": '-=450'}, 1000).css({"display": "grid"}, 1000);
+        }
+        else{
+            cl("shit aint working");
+        }
+    },
 }
+
+// let projectsPage = {
+//     h: () => {
+//         $(".hangman").hover(() => {
+//             cl("HOVERED");
+//             // $(".hangman #bg")
+//         });
+//     },
+// }
+
+let contact = () => {
+    $("#submit").on("click", () => {
+        let name = $("#contact-name").val().trim();
+        let email = $("#contact-email").val().trim();
+        let message = $("#contact-message").val().trim();
+        cl(name + "\n" + email + "\n" + message + "\n");
+        if(name === "" || email === "" || message === ""){
+            cl("No Input");
+        }
+        else{
+            db.ref(name).set({
+                name,
+                email,
+                message,
+            });
+            $("#contact-name").val("");
+            $("#contact-email").val("");
+            $("#contact-message").val("");
+            trans.ctoggle();
+        }
+
+    });
+}
+
+
+
+
+
+
+
+
 
 trans.h();
 trans.p();
 trans.a();
 trans.c();
 
+//projectsPage.h();
 
-
+contact();
 
 });
