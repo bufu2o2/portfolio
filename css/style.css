@@ -267,6 +267,18 @@ textarea{
 
 /* ----------------------------------------------------------- */
 
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+
+/* ----------- iPhone X ----------- */
+/* Portrait */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
@@ -292,7 +304,6 @@ textarea{
         bottom: 10px;
         left: calc(50% - 175px);
         width: 350px;
-        pointer-events: all;
     }
 
     /* ==================================================== */
@@ -357,5 +368,99 @@ textarea{
     }
     #submit{
         margin-bottom: 25px;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .navbar{
+        top: 20px;
+        right: 0px;
+        width: 500px;
+    }
+    .name-about{
+        top: 20px;
+        left: 20px;
+    }
+    .container{
+        top: 40px;
+        left: 30px;
+        width: calc(100% - 60px);
+        height: calc(100% - 30px);
+    }
+    .foot{
+        bottom: 0px;
+    }
+
+    /* ==================================================== */
+
+    .projects{
+        margin-top: -30px;
+    }
+
+    /* --------------------------------------------------------------*/
+
+    .about{
+        grid-template-columns: 1fr 2fr;
+        align-content: flex-start;
+        overflow-x: hidden;
+        margin-top: 10px;
+    }
+    .about-left{
+        margin-top: 10px;
+        overflow-y: hidden;
+    }
+    .about-left p{
+        margin-bottom: 10px;
+    }
+    ul{
+        margin-bottom: 0px;
+    }
+    hr{
+        margin: 30px 0;
+    }
+    .about-left img{
+        width: 200px;
+    }
+    .about-right p{
+        margin-bottom: 60px;
+        overflow-y: scroll;
+    }
+    
+/* --------------------------------------------------------------*/
+
+    .contact{
+        width: 350px;
+        height: 220px;
+        right: -500px;
+        top: 40px;
+    }
+    .contact-title{
+        justify-self: start;
+        margin: 30px 0 -5px 20px;
+    }
+    form{
+        width: 100%;
+        outline: none;
+        margin-left: 50px;
+    }
+    #submit{
+        margin-top: -5px;
+        margin-bottom: 25px;
+    }
+    textarea{
+        width: 80%;
+        height: 50px;
+        letter-spacing: 3px;
+    }
+    form input{
+        height: 10px;
+        width: 80%;
+        font-size: 10px;
+        letter-spacing: 3px;
     }
 }
