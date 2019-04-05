@@ -61,8 +61,10 @@ a{
     left: calc(50% - 250px);
     display: grid;
     width: 500px;
+    height: 50px;
     align-items: center;
-    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
     font-size: 20px;
 }
 .foot div{
@@ -71,7 +73,8 @@ a{
 .foot div a:hover{
     font-weight: bold;
     color: rgb(255, 251, 226);
-    text-shadow: 0px 0px 1px gold;
+    text-shadow: 0px 0px 3px gold;
+    font-size: 30px;
 }
 
 /* ====================================================================================== */
@@ -134,7 +137,8 @@ a{
 }
 .projects .pdiv a:hover{
     color: rgb(255, 251, 226);
-    text-shadow: 0px 0px 3px gold;
+    text-shadow: 2px 2px 3px gold;
+    font-size: 20px;
 }
 
 /* ----------------------------------------------------------- */
@@ -257,4 +261,101 @@ form input{
 }
 textarea{
     width: 80%;
+}
+
+/* ----------------------------------------------------------- */
+
+@media only screen and (max-width: 375px) {
+    .navbar{
+        top: 40px;
+        right: 0px;
+        width: 350px;
+        left: calc(50% - 175px);
+    }
+    .name-about{
+        top: 10px;
+        left: calc(50% - 40px);
+    }
+    .container{
+        top: 50px;
+        left: 30px;
+        width: calc(100% - 60px);
+        height: calc(100% - 50px);
+    }
+    .foot{
+        bottom: 10px;
+        left: calc(50% - 175px);
+        width: 350px;
+    }
+
+    /* ==================================================== */
+
+    .projects{
+        display: none;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 300px);
+        justify-content: center;
+        align-content: center;
+        justify-self: center;
+        width: 95%;
+        height: 100%;
+        margin-top: -30px;
+    }
+
+    /* --------------------------------------------------------------*/
+
+    .about{
+        grid-template-columns: 350px;
+        align-content: flex-start;
+        overflow-y: scroll;
+    }
+    .about-left{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .about-left p{
+        margin-bottom: 20px;
+    }
+    ul{
+        margin-bottom: 50px;
+    }
+    hr{
+        margin: 40px 0;
+    }
+    .about-left img{
+        width: 350px;
+    }
+
+/* --------------------------------------------------------------*/
+
+    .contact{
+        width: 350px;
+        height: 350px;
+        right: -500px;
+        top: 80px;
+    }
+    .contact-title{
+        justify-self: start;
+        margin: 20px;
+    }
+    form{
+        width: 100%;
+        outline: none;
+        margin-left: 50px;
+    }
+    #submit{
+        height: 25px;
+        justify-content: right;
+        background: transparent;
+        border: none;
+        color: white;
+        margin-bottom: 25px;
+        position: relative;
+    }
+    #submit:hover{
+        cursor: crosshair;
+        font-weight: bold;
+        color: rgb(255, 251, 226);
+        text-shadow: 0px 0px 1px gold;
+    }
 }
