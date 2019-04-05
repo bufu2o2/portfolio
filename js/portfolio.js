@@ -80,15 +80,6 @@ let trans = {
     },
 }
 
-// let projectsPage = {
-//     h: () => {
-//         $(".hangman").hover(() => {
-//             cl("HOVERED");
-//             // $(".hangman #bg")
-//         });
-//     },
-// }
-
 let contact = () => {
     $("#submit").on("click", () => {
         let name = $("#contact-name").val().trim();
