@@ -36,6 +36,7 @@ a{
     width: 500px;
     justify-items: center;
     grid-template-columns: repeat(4, 1fr);
+    z-index: 50;
 }
 .navbar div span{
     margin: 0 -3px;
@@ -66,6 +67,7 @@ a{
     justify-items: center;
     grid-template-columns: repeat(4, 1fr);
     font-size: 20px;
+    z-index: 50;
 }
 .foot div{
     text-align: center;
@@ -303,7 +305,7 @@ textarea{
         justify-self: center;
         width: 95%;
         height: 100%;
-        /* margin-top: -30px; */
+        margin-top: -30px;
     }
 
     /* --------------------------------------------------------------*/
