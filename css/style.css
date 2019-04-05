@@ -292,6 +292,7 @@ textarea{
         bottom: 10px;
         left: calc(50% - 175px);
         width: 350px;
+        pointer-events: all;
     }
 
     /* ==================================================== */
