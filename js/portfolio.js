@@ -106,7 +106,11 @@ let contact = () => {
     });
 }
 
-
+let close = () => {
+    $(".close").on("click", () => {
+        trans.ctoggle();
+    });
+}
 
 
 
@@ -122,5 +126,5 @@ trans.c();
 //projectsPage.h();
 
 contact();
-
+close();
 });
