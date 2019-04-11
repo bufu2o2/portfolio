@@ -82,6 +82,22 @@ let trans = {
     },
 }
 
+let hover = () => {
+    // $(".po-div").mouseover(function() {
+    //     $(this).css("display", "none");
+    // });
+
+    $(".pdiv").hover(function() {
+        $(this).find($(".po-div")).fadeIn(600).css("display", "grid");
+        $(this).find($(".projects-title")).fadeOut(300);
+        // $(this).css("background", "red");
+    }, function() {
+        $(this).find($(".po-div")).fadeOut(300);
+        $(this).find($(".projects-title")).fadeIn(600).css("display", "grid");
+        // $(this).css("background", "transparent");
+    });
+}
+
 let contact = () => {
     $("#submit").on("click", () => {
         let name = $("#contact-name").val().trim();
@@ -123,6 +139,7 @@ trans.p();
 trans.a();
 trans.c();
 
+hover();
 //projectsPage.h();
 
 contact();

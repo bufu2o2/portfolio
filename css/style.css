@@ -127,21 +127,49 @@ a{
     width: 95%;
     height: 100%;
 }
+.po-div{
+    display: none;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    height: 800%;
+    width: 100%;
+}
+.pdiv{
+    position: relative;
+}
+.po-div img{
+    width: 200px;
+    align-self: flex-end; 
+    border-radius: 5px;
+}
+.hov{
+    /* display: none; */
+}
+.p-btn{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    grid-gap: 60px;
+}
+.p-btn div{
+    font-size: 30px;
+    justify-content: center;
+}
+.p-btn div:hover{
+    text-shadow: 2px 2px 3px gold;
+}
 .projects .pdiv{
     display: grid;
     text-align: center;
     align-items: center;
 }
-.projects .pdiv a{
+.projects-title{
     display: grid;
     align-content: center;
     height: 100px;
     font-size: 25px;
-}
-.projects .pdiv a:hover{
-    color: rgb(255, 251, 226);
-    text-shadow: 2px 2px 3px gold;
-    font-size: 30px;
 }
 
 /* ----------------------------------------------------------- */
@@ -280,21 +308,54 @@ textarea{
 }
 
 /* ----------------------------------------------------------- */
+@media only screen and (max-width: 1360px) {
+    .po-div{
+        grid-gap: 50px;
+    }
+    .po-div img{
+        z-index: 50;
+    }
+    .p-btn{
+        align-self: flex-start;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
-    .projects .pdiv a{
+ .projects-title{
         font-size: 20px;
     }
-    .projects .pdiv a:hover{
+ .projects-title:hover{
         font-size: 25px;
+    }
+
+    .po-div img{
+        width: 150px;
+    }
+    .p-btn{
+        grid-gap: 25px;
     }
   }
 
   @media only screen and (max-width: 823px) {
-    .projects .pdiv a{
+ .projects-title{
         font-size: 15px;
     }
-    .projects .pdiv a:hover{
+ .projects-title:hover{
         font-size: 20px;
+    }
+
+    .po-div{
+        grid-gap: 50px;
+    }
+    .po-div img{
+        width: 150x;
+        z-index: 50;
+    }
+    .p-btn{
+        align-self: flex-start;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
     }
   }
 
@@ -330,6 +391,25 @@ textarea{
         overflow-y: auto;
         align-content: flex-start;
        }
+
+
+       .projects{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-row-gap: 150px;
+    }
+       .projects-title{
+        font-size: 20px;
+    }
+        .po-div img{
+            width: 100px;
+        }
+        .p-btn{
+            align-self: flex-start;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            font-size: 15px;
+        }
 
   }
 
@@ -441,6 +521,8 @@ textarea{
         line-height: 80px;
     }
 
+    
+
 
     .about{
         grid-template-columns: 1fr 2fr;
@@ -476,10 +558,10 @@ textarea{
 
 
   @media only screen and (max-width: 667px) {
-    .projects .pdiv a{
+ .projects-title{
         font-size: 10px;
     }
-    .projects .pdiv a:hover{
+ .projects-title:hover{
         font-size: 15px;
     }
   }
@@ -579,16 +661,22 @@ textarea{
 
 
 
-    .projects{
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-    }
-    .projects .pdiv a{
+
+    .projects-title{
         font-size: 10px;
     }
-    .projects .pdiv a:hover{
-        font-size: 15px;
+    .projects-title{
+        font-size: 20px;
     }
+        .po-div img{
+            width: 100px;
+        }
+        .p-btn{
+            align-self: flex-start;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            font-size: 15px;
+        }
 
     .foot{
         bottom: 0px;
@@ -761,10 +849,10 @@ textarea{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
     }
-    .projects .pdiv a{
+ .projects-title{
         font-size: 10px;
     }
-    .projects .pdiv a:hover{
+ .projects-title:hover{
         font-size: 15px;
     }
 
