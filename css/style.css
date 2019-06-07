@@ -186,12 +186,22 @@ a{
     justify-items: center;
     align-content: center;
     width: 100%;
+    margin-top: 300px;
+    height: calc(100% - 550px);
+    overflow-y: auto;
+}
+.about-left img{
+    margin-top: 150px;
+}
+.about-left::-webkit-scrollbar{
+    display: none;
 }
 .about-left p{
     font-size: 18px;
     font-weight: bold;
     border-bottom: 1px inset white;
     margin-bottom: 20px;
+    
 }
 hr{
     width: 90%;
